@@ -18,6 +18,7 @@ The repository is structured as follows:
             ├── [Solution].py
             └── README.md
 
+
 # algorithm Repository
 .
 ├── SWEA                          # SWEA
