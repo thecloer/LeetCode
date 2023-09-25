@@ -12,11 +12,11 @@ The repository is structured as follows:
 ```bash
 # this Repository
 .
-├── LeetCode                      # LeetCode
-│   └── [Difficulty]
-│       └── [Problem]
-│           ├── [Solution].py
-│           └── README.md
+└── LeetCode                      # LeetCode
+    └── [Difficulty]
+        └── [Problem]
+            ├── [Solution].py
+            └── README.md
 
 # algorithm Repository
 .
