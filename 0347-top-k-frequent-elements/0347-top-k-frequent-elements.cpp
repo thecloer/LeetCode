@@ -5,8 +5,9 @@ class Solution {
 public:
     vector<int> topKFrequent(vector<int>& nums, int k) {
         map<int, int> freq;
-        priority_queue<entry, vector<entry>, decltype(&cmp)> pq(cmp);
         for(int n:nums) freq[n]++;
+
+        priority_queue<entry, vector<entry>, decltype(&cmp)> pq(cmp);
         for(const auto &[key, value]:freq)
             pq.push({ key, value });
 
