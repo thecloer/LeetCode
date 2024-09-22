@@ -5,11 +5,10 @@ public:
         unordered_set<int> s(nums.begin(), nums.end());
 
         int ans = 1;
-
-        for(int x:s){
+        for(int x:s) {
             if(s.find(x-1) != s.end()) continue;
             int len = 1;
-            while(s.find(++x) != s.end()) ++len;
+            while(s.find(++x) != s.end()) len++;
             
             if(len > ans) ans = len;
         }
