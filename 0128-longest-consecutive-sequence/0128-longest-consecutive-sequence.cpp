@@ -5,12 +5,12 @@ public:
 
         int ans = 0;
         for(int x:nums) {
-            if(s.find(x-1) != s.end()) continue;
+            if(s.find(x-1) == s.end()) { 
+                int len = 1;
+                while(s.find(++x) != s.end()) len++;
 
-            int len = 1;
-            while(s.find(++x) != s.end()) len++;
-
-            if(len > ans) ans = len;
+                if(len > ans) ans = len;
+            }
         }
         return ans;
     }
