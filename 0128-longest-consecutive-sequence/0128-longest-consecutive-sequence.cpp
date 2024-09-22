@@ -9,9 +9,8 @@ public:
         for(int x:s){
             if(s.find(x-1) != s.end()) continue;
             int cnt = 1;
-            while(s.find(++x) != s.end()){
-                ++cnt;
-            }
+            while(s.find(++x) != s.end()) ++cnt;
+            
             if(cnt > ans) ans = cnt;
         }
         return ans;
