@@ -4,14 +4,12 @@ public:
         if(nums.size()==0) return 0;
         unordered_set<int> s(nums.begin(), nums.end());
 
-        int ans=1;
+        int ans = 1;
 
-        for(const int x:s){
+        for(int x:s){
             if(s.find(x-1) != s.end()) continue;
             int cnt = 1;
-            int y = x;
-            while(s.find(y+1) != s.end()){
-                ++y;
+            while(s.find(++x) != s.end()){
                 ++cnt;
             }
             ans = max(ans,cnt);
