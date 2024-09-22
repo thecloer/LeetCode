@@ -12,7 +12,7 @@ public:
             while(s.find(++x) != s.end()){
                 ++cnt;
             }
-            ans = max(ans,cnt);
+            if(cnt > ans) ans = cnt;
         }
         return ans;
     }
