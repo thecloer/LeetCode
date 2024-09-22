@@ -7,12 +7,18 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0036-valid-sudoku](https://github.com/thecloer/LeetCode/tree/master/0036-valid-sudoku) |
+| [0128-longest-consecutive-sequence](https://github.com/thecloer/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 ## Hash Table
 |  |
 | ------- |
 | [0036-valid-sudoku](https://github.com/thecloer/LeetCode/tree/master/0036-valid-sudoku) |
+| [0128-longest-consecutive-sequence](https://github.com/thecloer/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 ## Matrix
 |  |
 | ------- |
 | [0036-valid-sudoku](https://github.com/thecloer/LeetCode/tree/master/0036-valid-sudoku) |
+## Union Find
+|  |
+| ------- |
+| [0128-longest-consecutive-sequence](https://github.com/thecloer/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 <!---LeetCode Topics End-->
