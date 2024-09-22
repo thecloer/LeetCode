@@ -8,10 +8,10 @@ public:
 
         for(int x:s){
             if(s.find(x-1) != s.end()) continue;
-            int cnt = 1;
-            while(s.find(++x) != s.end()) ++cnt;
+            int len = 1;
+            while(s.find(++x) != s.end()) ++len;
             
-            if(cnt > ans) ans = cnt;
+            if(len > ans) ans = len;
         }
         return ans;
     }
