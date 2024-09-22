@@ -1,3 +1,5 @@
+inline bool setContains(unordered_set<int> &s, int x) {return s.find(x) != s.end();}
+
 class Solution {
 public:
     int longestConsecutive(vector<int>& nums) {
@@ -5,10 +7,9 @@ public:
 
         int ans = 0;
         for(int x:s) {
-            if(s.find(x-1) != s.end()) continue;
+            if(setContains(s, x-1)) continue;
             int len = 1;
-            while(s.find(++x) != s.end()) len++;
-            
+            while(setContains(s, ++x)) len++;
             if(len > ans) ans = len;
         }
         return ans;
