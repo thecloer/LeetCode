@@ -5,7 +5,7 @@ public:
 
         unordered_set<int> st(nums.begin(), nums.end());
 
-        int ans = 0;
+        int ans = 1;
         for(int x:nums) {
             if(st.find(x-1) != st.end()) continue;
 
