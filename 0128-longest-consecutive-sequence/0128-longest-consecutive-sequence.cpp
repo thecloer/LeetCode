@@ -9,7 +9,7 @@ public:
             if(s.find(n-1) != s.end()) continue;
 
             int x = n, len = 1;
-            while(s.find(++x) != s.end()) len++;
+            while(s.find(++x) != s.end()) ++len;
 
             if(len > ans) ans = len;
         }
