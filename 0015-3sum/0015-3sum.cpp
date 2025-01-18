@@ -4,31 +4,23 @@ public:
         sort(nums.begin(), nums.end());
         vector<vector<int>> ans;
 
-        int end = nums.size() - 2;
-        int i = 0;
-        while(i < end) {
-            int target = -nums[i];
+        for(int i = 0, end = nums.size() - 2; i < end; i++) {
+            if(nums[i] > 0) break;
+            if(i > 0 && nums[i] == nums[i - 1]) continue;
+
             int j = i + 1, k = nums.size() - 1;
             while(j < k) {
-                int sum = nums[j] + nums[k];
-                if(sum < target) {
-                    j++;
-                } else if (sum > target) {
-                    k--;
-                } else {
+                int sum = nums[i] + nums[j] + nums[k];
+                if(sum < 0) j++;
+                else if (sum > 0) k--;
+                else {
                     ans.push_back({ nums[i], nums[j], nums[k] });
 
-                    int l = j, r = k;
-                    while(l < r && nums[j] == nums[++l]);
-                    while(l < r && nums[k] == nums[--r]);
-                    j = l;
-                    k = r;
+                    j++;
+                    k--;
+                    while(j < k && nums[j] == nums[j - 1]) j++;
                 }
             }
-
-            int t = i;
-            while(t < end && nums[i] == nums[++t]);
-            i = t;
         }
         return ans;
     }
